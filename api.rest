@@ -1,0 +1,37 @@
+
+# @name SIGN_UP
+POST http://localhost:3000/api/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "password123"
+}
+###
+
+# @name LOGIN
+POST http://localhost:3000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "john.doe@example.com",
+    "password": "password123"
+}
+###
+
+
+# @name GET_ALL_USERS
+GET http://localhost:3000/api/get-all-users HTTP/1.1
+Content-Type: application/json
+###
+
+
+# @name GET_USER_DETAILS
+GET http://localhost:3000/api/user-details/9d2f199d-86d5-46f3-a70d-6eced9ca810a HTTP/1.1
+Content-Type: application/json
+###
+
+
+
+
