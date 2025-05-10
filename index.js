@@ -8,8 +8,8 @@ app.use(express.json());
 
 // app.options("*", cors());
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.get("/hello", (req, res) => {
+  res.send("Hello");
 });
 
 app.use("/api", usersRouter);
